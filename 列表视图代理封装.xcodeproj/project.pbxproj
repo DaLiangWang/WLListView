@@ -1,0 +1,640 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF14532E212563BD002897B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF14532D212563BD002897B4 /* AppDelegate.m */; };
+		EF145331212563BD002897B4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF145330212563BD002897B4 /* ViewController.m */; };
+		EF145334212563BD002897B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF145332212563BD002897B4 /* Main.storyboard */; };
+		EF145336212563C0002897B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF145335212563C0002897B4 /* Assets.xcassets */; };
+		EF145339212563C0002897B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF145337212563C0002897B4 /* LaunchScreen.storyboard */; };
+		EF14533C212563C0002897B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF14533B212563C0002897B4 /* main.m */; };
+		EF145371212563DA002897B4 /* WLCollectionViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF145360212563DA002897B4 /* WLCollectionViewDelegate.m */; };
+		EF145372212563DA002897B4 /* WLBaseCollectionViewLayerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF145362212563DA002897B4 /* WLBaseCollectionViewLayerModel.m */; };
+		EF145373212563DA002897B4 /* WLCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF145368212563DA002897B4 /* WLCollectionReusableView.m */; };
+		EF145374212563DA002897B4 /* WLCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EF145369212563DA002897B4 /* WLCollectionViewFlowLayout.m */; };
+		EF145375212563DA002897B4 /* WLCollectionViewLayoutAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = EF14536A212563DA002897B4 /* WLCollectionViewLayoutAttributes.m */; };
+		EF145376212563DA002897B4 /* WLBaseTableViewLayerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF145370212563DA002897B4 /* WLBaseTableViewLayerModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF145342212563C0002897B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF145321212563BD002897B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF145328212563BD002897B4;
+			remoteInfo = "列表视图代理封装";
+		};
+		EF14534D212563C0002897B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF145321212563BD002897B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF145328212563BD002897B4;
+			remoteInfo = "列表视图代理封装";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF145329212563BD002897B4 /* 列表视图代理封装.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "列表视图代理封装.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF14532C212563BD002897B4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EF14532D212563BD002897B4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EF14532F212563BD002897B4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EF145330212563BD002897B4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EF145333212563BD002897B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF145335212563C0002897B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF145338212563C0002897B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF14533A212563C0002897B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF14533B212563C0002897B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EF145341212563C0002897B4 /* 列表视图代理封装Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "列表视图代理封装Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF14534C212563C0002897B4 /* 列表视图代理封装UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "列表视图代理封装UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF145360212563DA002897B4 /* WLCollectionViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLCollectionViewDelegate.m; sourceTree = "<group>"; };
+		EF145362212563DA002897B4 /* WLBaseCollectionViewLayerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLBaseCollectionViewLayerModel.m; sourceTree = "<group>"; };
+		EF145363212563DA002897B4 /* WLBaseCollectionViewLayerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLBaseCollectionViewLayerModel.h; sourceTree = "<group>"; };
+		EF145364212563DA002897B4 /* WLCollectionViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLCollectionViewDelegate.h; sourceTree = "<group>"; };
+		EF145367212563DA002897B4 /* WLCollectionViewLayoutAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLCollectionViewLayoutAttributes.h; sourceTree = "<group>"; };
+		EF145368212563DA002897B4 /* WLCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLCollectionReusableView.m; sourceTree = "<group>"; };
+		EF145369212563DA002897B4 /* WLCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		EF14536A212563DA002897B4 /* WLCollectionViewLayoutAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLCollectionViewLayoutAttributes.m; sourceTree = "<group>"; };
+		EF14536B212563DA002897B4 /* WLCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLCollectionReusableView.h; sourceTree = "<group>"; };
+		EF14536C212563DA002897B4 /* WLCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		EF14536F212563DA002897B4 /* WLBaseTableViewLayerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLBaseTableViewLayerModel.h; sourceTree = "<group>"; };
+		EF145370212563DA002897B4 /* WLBaseTableViewLayerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLBaseTableViewLayerModel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF145326212563BD002897B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF14533E212563C0002897B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF145349212563C0002897B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF145320212563BD002897B4 = {
+			isa = PBXGroup;
+			children = (
+				EF14532B212563BD002897B4 /* 列表视图代理封装 */,
+				EF14532A212563BD002897B4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF14532A212563BD002897B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF145329212563BD002897B4 /* 列表视图代理封装.app */,
+				EF145341212563C0002897B4 /* 列表视图代理封装Tests.xctest */,
+				EF14534C212563C0002897B4 /* 列表视图代理封装UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF14532B212563BD002897B4 /* 列表视图代理封装 */ = {
+			isa = PBXGroup;
+			children = (
+				EF14535E212563DA002897B4 /* WLListView */,
+				EF14532C212563BD002897B4 /* AppDelegate.h */,
+				EF14532D212563BD002897B4 /* AppDelegate.m */,
+				EF14532F212563BD002897B4 /* ViewController.h */,
+				EF145330212563BD002897B4 /* ViewController.m */,
+				EF145332212563BD002897B4 /* Main.storyboard */,
+				EF145335212563C0002897B4 /* Assets.xcassets */,
+				EF145337212563C0002897B4 /* LaunchScreen.storyboard */,
+				EF14533A212563C0002897B4 /* Info.plist */,
+				EF14533B212563C0002897B4 /* main.m */,
+			);
+			path = "列表视图代理封装";
+			sourceTree = "<group>";
+		};
+		EF14535E212563DA002897B4 /* WLListView */ = {
+			isa = PBXGroup;
+			children = (
+				EF14535F212563DA002897B4 /* UICollectionView */,
+				EF14536D212563DA002897B4 /* UITableView */,
+			);
+			path = WLListView;
+			sourceTree = "<group>";
+		};
+		EF14535F212563DA002897B4 /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				EF145360212563DA002897B4 /* WLCollectionViewDelegate.m */,
+				EF145361212563DA002897B4 /* WLCollectionModel */,
+				EF145364212563DA002897B4 /* WLCollectionViewDelegate.h */,
+				EF145365212563DA002897B4 /* UICollectionFlowLayout */,
+			);
+			path = UICollectionView;
+			sourceTree = "<group>";
+		};
+		EF145361212563DA002897B4 /* WLCollectionModel */ = {
+			isa = PBXGroup;
+			children = (
+				EF145362212563DA002897B4 /* WLBaseCollectionViewLayerModel.m */,
+				EF145363212563DA002897B4 /* WLBaseCollectionViewLayerModel.h */,
+			);
+			path = WLCollectionModel;
+			sourceTree = "<group>";
+		};
+		EF145365212563DA002897B4 /* UICollectionFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				EF145366212563DA002897B4 /* WLCollectionFlowLayout(section Background distinction) */,
+			);
+			path = UICollectionFlowLayout;
+			sourceTree = "<group>";
+		};
+		EF145366212563DA002897B4 /* WLCollectionFlowLayout(section Background distinction) */ = {
+			isa = PBXGroup;
+			children = (
+				EF145367212563DA002897B4 /* WLCollectionViewLayoutAttributes.h */,
+				EF145368212563DA002897B4 /* WLCollectionReusableView.m */,
+				EF145369212563DA002897B4 /* WLCollectionViewFlowLayout.m */,
+				EF14536A212563DA002897B4 /* WLCollectionViewLayoutAttributes.m */,
+				EF14536B212563DA002897B4 /* WLCollectionReusableView.h */,
+				EF14536C212563DA002897B4 /* WLCollectionViewFlowLayout.h */,
+			);
+			path = "WLCollectionFlowLayout(section Background distinction)";
+			sourceTree = "<group>";
+		};
+		EF14536D212563DA002897B4 /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				EF14536E212563DA002897B4 /* WLTableViewModel */,
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
+		EF14536E212563DA002897B4 /* WLTableViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EF14536F212563DA002897B4 /* WLBaseTableViewLayerModel.h */,
+				EF145370212563DA002897B4 /* WLBaseTableViewLayerModel.m */,
+			);
+			path = WLTableViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF145328212563BD002897B4 /* 列表视图代理封装 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF145355212563C0002897B4 /* Build configuration list for PBXNativeTarget "列表视图代理封装" */;
+			buildPhases = (
+				EF145325212563BD002897B4 /* Sources */,
+				EF145326212563BD002897B4 /* Frameworks */,
+				EF145327212563BD002897B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "列表视图代理封装";
+			productName = "列表视图代理封装";
+			productReference = EF145329212563BD002897B4 /* 列表视图代理封装.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF145340212563C0002897B4 /* 列表视图代理封装Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF145358212563C0002897B4 /* Build configuration list for PBXNativeTarget "列表视图代理封装Tests" */;
+			buildPhases = (
+				EF14533D212563C0002897B4 /* Sources */,
+				EF14533E212563C0002897B4 /* Frameworks */,
+				EF14533F212563C0002897B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF145343212563C0002897B4 /* PBXTargetDependency */,
+			);
+			name = "列表视图代理封装Tests";
+			productName = "列表视图代理封装Tests";
+			productReference = EF145341212563C0002897B4 /* 列表视图代理封装Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EF14534B212563C0002897B4 /* 列表视图代理封装UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF14535B212563C0002897B4 /* Build configuration list for PBXNativeTarget "列表视图代理封装UITests" */;
+			buildPhases = (
+				EF145348212563C0002897B4 /* Sources */,
+				EF145349212563C0002897B4 /* Frameworks */,
+				EF14534A212563C0002897B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF14534E212563C0002897B4 /* PBXTargetDependency */,
+			);
+			name = "列表视图代理封装UITests";
+			productName = "列表视图代理封装UITests";
+			productReference = EF14534C212563C0002897B4 /* 列表视图代理封装UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF145321212563BD002897B4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "王亮";
+				TargetAttributes = {
+					EF145328212563BD002897B4 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					EF145340212563C0002897B4 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = EF145328212563BD002897B4;
+					};
+					EF14534B212563C0002897B4 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = EF145328212563BD002897B4;
+					};
+				};
+			};
+			buildConfigurationList = EF145324212563BD002897B4 /* Build configuration list for PBXProject "列表视图代理封装" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF145320212563BD002897B4;
+			productRefGroup = EF14532A212563BD002897B4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF145328212563BD002897B4 /* 列表视图代理封装 */,
+				EF145340212563C0002897B4 /* 列表视图代理封装Tests */,
+				EF14534B212563C0002897B4 /* 列表视图代理封装UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF145327212563BD002897B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF145339212563C0002897B4 /* LaunchScreen.storyboard in Resources */,
+				EF145336212563C0002897B4 /* Assets.xcassets in Resources */,
+				EF145334212563BD002897B4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF14533F212563C0002897B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF14534A212563C0002897B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF145325212563BD002897B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF145373212563DA002897B4 /* WLCollectionReusableView.m in Sources */,
+				EF145376212563DA002897B4 /* WLBaseTableViewLayerModel.m in Sources */,
+				EF145374212563DA002897B4 /* WLCollectionViewFlowLayout.m in Sources */,
+				EF145331212563BD002897B4 /* ViewController.m in Sources */,
+				EF14533C212563C0002897B4 /* main.m in Sources */,
+				EF145375212563DA002897B4 /* WLCollectionViewLayoutAttributes.m in Sources */,
+				EF145371212563DA002897B4 /* WLCollectionViewDelegate.m in Sources */,
+				EF14532E212563BD002897B4 /* AppDelegate.m in Sources */,
+				EF145372212563DA002897B4 /* WLBaseCollectionViewLayerModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF14533D212563C0002897B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF145348212563C0002897B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF145343212563C0002897B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF145328212563BD002897B4 /* 列表视图代理封装 */;
+			targetProxy = EF145342212563C0002897B4 /* PBXContainerItemProxy */;
+		};
+		EF14534E212563C0002897B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF145328212563BD002897B4 /* 列表视图代理封装 */;
+			targetProxy = EF14534D212563C0002897B4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF145332212563BD002897B4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF145333212563BD002897B4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF145337212563C0002897B4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF145338212563C0002897B4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF145353212563C0002897B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EF145354212563C0002897B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF145356212563C0002897B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "列表视图代理封装/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.--------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF145357212563C0002897B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "列表视图代理封装/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.--------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EF145359212563C0002897B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "列表视图代理封装Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.--------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/列表视图代理封装.app/列表视图代理封装";
+			};
+			name = Debug;
+		};
+		EF14535A212563C0002897B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "列表视图代理封装Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.--------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/列表视图代理封装.app/列表视图代理封装";
+			};
+			name = Release;
+		};
+		EF14535C212563C0002897B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "列表视图代理封装UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.--------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "列表视图代理封装";
+			};
+			name = Debug;
+		};
+		EF14535D212563C0002897B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "列表视图代理封装UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.--------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "列表视图代理封装";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF145324212563BD002897B4 /* Build configuration list for PBXProject "列表视图代理封装" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF145353212563C0002897B4 /* Debug */,
+				EF145354212563C0002897B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF145355212563C0002897B4 /* Build configuration list for PBXNativeTarget "列表视图代理封装" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF145356212563C0002897B4 /* Debug */,
+				EF145357212563C0002897B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF145358212563C0002897B4 /* Build configuration list for PBXNativeTarget "列表视图代理封装Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF145359212563C0002897B4 /* Debug */,
+				EF14535A212563C0002897B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF14535B212563C0002897B4 /* Build configuration list for PBXNativeTarget "列表视图代理封装UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF14535C212563C0002897B4 /* Debug */,
+				EF14535D212563C0002897B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF145321212563BD002897B4 /* Project object */;
+}
