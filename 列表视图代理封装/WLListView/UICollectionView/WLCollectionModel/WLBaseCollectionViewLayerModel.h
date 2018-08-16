@@ -33,12 +33,15 @@
 @property(nonatomic,assign) CGFloat VerticalSection;
 /** section内，cell的间距 水平 */
 @property(nonatomic,assign) CGFloat HorizontalSection;
+
 /** section 头试图大小 */
 @property(nonatomic,assign) CGSize headerSize;
 /** section 头试图数据 */
 @property(nonatomic,strong) id headerData;
 /** section 脚试图大小 */
 @property(nonatomic,assign) CGSize footSize;
+/** section 脚试图数据 */
+@property(nonatomic,strong) id footData;
 
 /** row 数据 */
 @property(nonatomic,strong) NSMutableArray<WLBaseCollectionViewLayerRow *> *item;

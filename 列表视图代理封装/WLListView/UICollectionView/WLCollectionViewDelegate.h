@@ -16,6 +16,11 @@
                                 layerModel:(WLBaseCollectionViewLayerModel *)model
                              cellIndexPath:(NSIndexPath *)indexPath;
 @optional
+//头脚视图创建
+- (UICollectionReusableView *)wl_collectionView:(UICollectionView *)collectionView
+              viewForSupplementaryElementOfKind:(NSString *)kind
+                              layersectionModel:(id)section
+                                    atIndexPath:(NSIndexPath *)indexPath;
 //点击cell的响应
 - (void)wl_collectionView:(UICollectionView *)collectionView
                layerModel:(WLBaseCollectionViewLayerModel *)model

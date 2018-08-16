@@ -19,6 +19,7 @@
 		EF145374212563DA002897B4 /* WLCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EF145369212563DA002897B4 /* WLCollectionViewFlowLayout.m */; };
 		EF145375212563DA002897B4 /* WLCollectionViewLayoutAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = EF14536A212563DA002897B4 /* WLCollectionViewLayoutAttributes.m */; };
 		EF145376212563DA002897B4 /* WLBaseTableViewLayerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF145370212563DA002897B4 /* WLBaseTableViewLayerModel.m */; };
+		EF14537921256921002897B4 /* WLTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF14537821256921002897B4 /* WLTableViewDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		EF14536C212563DA002897B4 /* WLCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLCollectionViewFlowLayout.h; sourceTree = "<group>"; };
 		EF14536F212563DA002897B4 /* WLBaseTableViewLayerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLBaseTableViewLayerModel.h; sourceTree = "<group>"; };
 		EF145370212563DA002897B4 /* WLBaseTableViewLayerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLBaseTableViewLayerModel.m; sourceTree = "<group>"; };
+		EF14537721256921002897B4 /* WLTableViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLTableViewDelegate.h; sourceTree = "<group>"; };
+		EF14537821256921002897B4 /* WLTableViewDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLTableViewDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,10 +140,10 @@
 		EF14535F212563DA002897B4 /* UICollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				EF145360212563DA002897B4 /* WLCollectionViewDelegate.m */,
 				EF145361212563DA002897B4 /* WLCollectionModel */,
+				EF145366212563DA002897B4 /* WLCollectionFlowLayout */,
 				EF145364212563DA002897B4 /* WLCollectionViewDelegate.h */,
-				EF145365212563DA002897B4 /* UICollectionFlowLayout */,
+				EF145360212563DA002897B4 /* WLCollectionViewDelegate.m */,
 			);
 			path = UICollectionView;
 			sourceTree = "<group>";
@@ -154,31 +157,25 @@
 			path = WLCollectionModel;
 			sourceTree = "<group>";
 		};
-		EF145365212563DA002897B4 /* UICollectionFlowLayout */ = {
-			isa = PBXGroup;
-			children = (
-				EF145366212563DA002897B4 /* WLCollectionFlowLayout(section Background distinction) */,
-			);
-			path = UICollectionFlowLayout;
-			sourceTree = "<group>";
-		};
-		EF145366212563DA002897B4 /* WLCollectionFlowLayout(section Background distinction) */ = {
+		EF145366212563DA002897B4 /* WLCollectionFlowLayout */ = {
 			isa = PBXGroup;
 			children = (
 				EF145367212563DA002897B4 /* WLCollectionViewLayoutAttributes.h */,
-				EF145368212563DA002897B4 /* WLCollectionReusableView.m */,
-				EF145369212563DA002897B4 /* WLCollectionViewFlowLayout.m */,
 				EF14536A212563DA002897B4 /* WLCollectionViewLayoutAttributes.m */,
 				EF14536B212563DA002897B4 /* WLCollectionReusableView.h */,
+				EF145368212563DA002897B4 /* WLCollectionReusableView.m */,
 				EF14536C212563DA002897B4 /* WLCollectionViewFlowLayout.h */,
+				EF145369212563DA002897B4 /* WLCollectionViewFlowLayout.m */,
 			);
-			path = "WLCollectionFlowLayout(section Background distinction)";
+			path = WLCollectionFlowLayout;
 			sourceTree = "<group>";
 		};
 		EF14536D212563DA002897B4 /* UITableView */ = {
 			isa = PBXGroup;
 			children = (
 				EF14536E212563DA002897B4 /* WLTableViewModel */,
+				EF14537721256921002897B4 /* WLTableViewDelegate.h */,
+				EF14537821256921002897B4 /* WLTableViewDelegate.m */,
 			);
 			path = UITableView;
 			sourceTree = "<group>";
@@ -329,6 +326,7 @@
 				EF14533C212563C0002897B4 /* main.m in Sources */,
 				EF145375212563DA002897B4 /* WLCollectionViewLayoutAttributes.m in Sources */,
 				EF145371212563DA002897B4 /* WLCollectionViewDelegate.m in Sources */,
+				EF14537921256921002897B4 /* WLTableViewDelegate.m in Sources */,
 				EF14532E212563BD002897B4 /* AppDelegate.m in Sources */,
 				EF145372212563DA002897B4 /* WLBaseCollectionViewLayerModel.m in Sources */,
 			);

@@ -21,32 +21,28 @@
     [super viewDidLoad];
     data = [[WLCollectionViewDelegate alloc]initWithDelegate:self];
     
-    data.viewModel = [WLBaseCollectionViewLayerModel new];
     //    用户数据
     WLBaseCollectionViewLayerSection *userInfo = [WLBaseCollectionViewLayerSection new];
     userInfo.type = @"userInfo";
-    userInfo.insetForSection = UIEdgeInsetsMake(0, 0, 0, 0);
-    userInfo.HorizontalSection = 0;
-    userInfo.VerticalSection = 0;
+    
+    userInfo.headerSize = CGSizeMake(10, 30);
+    userInfo.headerData = [UIColor orangeColor];
+    
+    userInfo.footSize = CGSizeMake(10, 30);
+    userInfo.footData = [UIColor redColor];
+    
     {
         WLBaseCollectionViewLayerRow *userInfoRow = [WLBaseCollectionViewLayerRow new];
         userInfoRow.type = @"userInfo";
         userInfoRow.data = [UIColor redColor];
-        userInfoRow.cellSize = CGSizeMake(200, 100);
+        userInfoRow.cellSize = CGSizeMake(100, 100);
         [userInfo.item addObject:userInfoRow];
     }
     {
         WLBaseCollectionViewLayerRow *userInfoRow = [WLBaseCollectionViewLayerRow new];
         userInfoRow.type = @"userInfo";
         userInfoRow.data = [UIColor yellowColor];
-        userInfoRow.cellSize = CGSizeMake(200, 100);
-        [userInfo.item addObject:userInfoRow];
-    }
-    {
-        WLBaseCollectionViewLayerRow *userInfoRow = [WLBaseCollectionViewLayerRow new];
-        userInfoRow.type = @"userInfo";
-        userInfoRow.data = [UIColor grayColor];
-        userInfoRow.cellSize = CGSizeMake(200, 100);
+        userInfoRow.cellSize = CGSizeMake(100, 100);
         [userInfo.item addObject:userInfoRow];
     }
     [data.viewModel.viewLayer addObject:userInfo];
@@ -54,15 +50,17 @@
     
     UICollectionViewFlowLayout *Layout = [UICollectionViewFlowLayout new];
     [Layout setScrollDirection:UICollectionViewScrollDirectionVertical];
-    
-    UICollectionView *cv = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 25, 200, 200) collectionViewLayout:Layout];
-    
+//    [Layout setScrollDirection:UICollectionViewScrollDirectionHorizontal];
+
+    UICollectionView *cv = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 25, 300, 250) collectionViewLayout:Layout];
+    cv.backgroundColor = [UIColor colorWithWhite:0.5f alpha:.2f];
     cv.delegate = data;
     cv.dataSource = data;
     
     [self.view addSubview:cv];
     
 }
+//cell创建
 -(UICollectionViewCell *)wl_collectionView:(UICollectionView *)collectionView
                                 layerModel:(WLBaseCollectionViewLayerModel *)model
                              cellIndexPath:(NSIndexPath *)indexPath{
@@ -75,11 +73,31 @@
     
     return otherCell;
 }
+//头脚视图创建
+- (UICollectionReusableView *)wl_collectionView:(UICollectionView *)collectionView
+              viewForSupplementaryElementOfKind:(NSString *)kind
+                              layersectionModel:(WLBaseCollectionViewLayerSection *)section
+                                    atIndexPath:(NSIndexPath *)indexPath{
+    UICollectionReusableView *view = nil;
+    NSString *type = section.type;
+    if ([type isEqualToString:@"userInfo"]){
+        static NSString *cellT = @"ssss1234";
+        [collectionView registerClass:UICollectionReusableView.class forSupplementaryViewOfKind:kind withReuseIdentifier:cellT];
+        view = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:cellT forIndexPath:indexPath];
+
+        view.backgroundColor = [kind isEqualToString:UICollectionElementKindSectionHeader]?section.headerData:section.footData;
+    }
+    return view;
+}
+
+//cell点击
 -(void)wl_collectionView:(UICollectionView *)collectionView
               layerModel:(WLBaseCollectionViewLayerModel *)model
             didIndexPath:(NSIndexPath *)indexPath{
     NSLog(@"12341234");
 }
+
+
 
 
 - (void)didReceiveMemoryWarning {
